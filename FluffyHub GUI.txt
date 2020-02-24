@@ -1,0 +1,1243 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title    = "FluffyHub",
+Text     = "Use = to hide the hub.",
+Duration = 10,
+})
+
+local vu = game:GetService("VirtualUser")
+game:GetService("Players").LocalPlayer.Idled:connect(function()
+   vu:Button2Down(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+   wait(1)
+   vu:Button2Up(Vector2.new(0,0),workspace.CurrentCamera.CFrame)
+end)
+
+local FluffyHubV2 = Instance.new("ScreenGui")
+local Background = Instance.new("ImageButton")
+local QuickBackground = Instance.new("ImageButton")
+local Home = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local Scripts = Instance.new("ImageButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local Games = Instance.new("ImageButton")
+local TextLabel_3 = Instance.new("TextLabel")
+local Credits = Instance.new("ImageButton")
+local TextLabel_4 = Instance.new("TextLabel")
+local Partners = Instance.new("ImageButton")
+local TextLabel_5 = Instance.new("TextLabel")
+local HomeFrame = Instance.new("ImageButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local CreditsFrame = Instance.new("ImageButton")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local GamesFrame = Instance.new("ImageButton")
+local ScrollingFrame_2 = Instance.new("ScrollingFrame")
+local AdoptMe = Instance.new("ImageButton")
+local TextLabel_10 = Instance.new("TextLabel")
+local AnimeFightingSim = Instance.new("ImageButton")
+local TextLabel_11 = Instance.new("TextLabel")
+local Arsenal = Instance.new("ImageButton")
+local TextLabel_12 = Instance.new("TextLabel")
+local BIGPaintball = Instance.new("ImageButton")
+local TextLabel_13 = Instance.new("TextLabel")
+local DeathStarTycoon = Instance.new("ImageButton")
+local TextLabel_14 = Instance.new("TextLabel")
+local Jailbreak = Instance.new("ImageButton")
+local TextLabel_15 = Instance.new("TextLabel")
+local LawnMowingSim = Instance.new("ImageButton")
+local TextLabel_16 = Instance.new("TextLabel")
+local Madcity = Instance.new("ImageButton")
+local TextLabel_17 = Instance.new("TextLabel")
+local NaturalDisasterSim = Instance.new("ImageButton")
+local TextLabel_18 = Instance.new("TextLabel")
+local NinjaLegends = Instance.new("ImageButton")
+local TextLabel_19 = Instance.new("TextLabel")
+local Piggy = Instance.new("ImageButton")
+local TextLabel_20 = Instance.new("TextLabel")
+local PrisonLife = Instance.new("ImageButton")
+local TextLabel_21 = Instance.new("TextLabel")
+local SaberSim = Instance.new("ImageButton")
+local TextLabel_22 = Instance.new("TextLabel")
+local Skywars = Instance.new("ImageButton")
+local TextLabel_23 = Instance.new("TextLabel")
+local SpeedRun4 = Instance.new("ImageButton")
+local TextLabel_24 = Instance.new("TextLabel")
+local ThickLegends = Instance.new("ImageButton")
+local TextLabel_25 = Instance.new("TextLabel")
+local TowerOfHell = Instance.new("ImageButton")
+local TextLabel_26 = Instance.new("TextLabel")
+local GiantSimulator = Instance.new("ImageButton")
+local TextLabel_27 = Instance.new("TextLabel")
+local TheStreets = Instance.new("ImageButton")
+local TextLabel_28 = Instance.new("TextLabel")
+local DungeonQuest = Instance.new("ImageButton")
+local TextLabel_29 = Instance.new("TextLabel")
+local ScriptsFrame = Instance.new("ImageButton")
+local ScrollingFrame_3 = Instance.new("ScrollingFrame")
+local ChatSpy = Instance.new("ImageButton")
+local TextLabel_30 = Instance.new("TextLabel")
+local DarkDex = Instance.new("ImageButton")
+local TextLabel_31 = Instance.new("TextLabel")
+local FPSGUI = Instance.new("ImageButton")
+local TextLabel_32 = Instance.new("TextLabel")
+local FrostHook = Instance.new("ImageButton")
+local TextLabel_33 = Instance.new("TextLabel")
+local InfJump = Instance.new("ImageButton")
+local TextLabel_34 = Instance.new("TextLabel")
+local MrSpyV2 = Instance.new("ImageButton")
+local TextLabel_35 = Instance.new("TextLabel")
+local OwlHub = Instance.new("ImageButton")
+local TextLabel_36 = Instance.new("TextLabel")
+local PotatoHub = Instance.new("ImageButton")
+local TextLabel_37 = Instance.new("TextLabel")
+local UniversalAimbot = Instance.new("ImageButton")
+local TextLabel_38 = Instance.new("TextLabel")
+local UnnamedESP = Instance.new("ImageButton")
+local TextLabel_39 = Instance.new("TextLabel")
+local TrollingGUI = Instance.new("ImageButton")
+local TextLabel_40 = Instance.new("TextLabel")
+local AtariWow = Instance.new("ImageButton")
+local TextLabel_41 = Instance.new("TextLabel")
+local PartnersFrame = Instance.new("ImageButton")
+local ScrollingFrame_4 = Instance.new("ScrollingFrame")
+local TextLabel_42 = Instance.new("TextLabel")
+local iHub = Instance.new("ImageButton")
+local TextLabel_43 = Instance.new("TextLabel")
+
+--Properties:
+
+FluffyHubV2.Name = "FluffyHub V2"
+FluffyHubV2.Parent = game:GetService("CoreGui")
+
+Background.Name = "Background"
+Background.Parent = FluffyHubV2
+Background.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Background.BackgroundTransparency = 1.000
+Background.Position = UDim2.new(0.209677413, 0, 0.275184274, 0)
+Background.Size = UDim2.new(0, 848, 0, 443)
+Background.Image = "rbxassetid://2790382281"
+Background.ImageColor3 = Color3.fromRGB(38, 38, 47)
+Background.ScaleType = Enum.ScaleType.Slice
+Background.SliceCenter = Rect.new(4, 4, 252, 252)
+
+QuickBackground.Name = "QuickBackground"
+QuickBackground.Parent = Background
+QuickBackground.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+QuickBackground.BackgroundTransparency = 1.000
+QuickBackground.Position = UDim2.new(0.0106132077, 0, 0.0812641084, 0)
+QuickBackground.Size = UDim2.new(0, 158, 0, 397)
+QuickBackground.Image = "rbxassetid://2790389767"
+QuickBackground.ImageColor3 = Color3.fromRGB(55, 60, 70)
+QuickBackground.ScaleType = Enum.ScaleType.Slice
+QuickBackground.SliceCenter = Rect.new(8, 8, 248, 248)
+
+Home.Name = "Home"
+Home.Parent = QuickBackground
+Home.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Home.BackgroundTransparency = 1.000
+Home.Position = UDim2.new(0.12658228, 0, 0.0377833769, 0)
+Home.Size = UDim2.new(0, 117, 0, 40)
+Home.Image = "rbxassetid://2790389767"
+Home.ImageColor3 = Color3.fromRGB(220, 80, 82)
+Home.ScaleType = Enum.ScaleType.Slice
+Home.SliceCenter = Rect.new(8, 8, 248, 248)
+Home.MouseButton1Down:connect(function()
+HomeFrame.Visible = true
+PartnersFrame.Visible = false
+ScriptsFrame.Visible = false
+GamesFrame.Visible = false
+CreditsFrame.Visible = false
+end)
+
+TextLabel.Parent = Home
+TextLabel.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.5, 0, 0.518750012, 0)
+TextLabel.Size = UDim2.new(1.0427351, -5, 1.0625, -5)
+TextLabel.Font = Enum.Font.GothamBold
+TextLabel.Text = "Home"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+Scripts.Name = "Scripts"
+Scripts.Parent = QuickBackground
+Scripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Scripts.BackgroundTransparency = 1.000
+Scripts.Position = UDim2.new(0.12658228, 0, 0.178841323, 0)
+Scripts.Size = UDim2.new(0, 117, 0, 40)
+Scripts.Image = "rbxassetid://2790389767"
+Scripts.ImageColor3 = Color3.fromRGB(220, 80, 82)
+Scripts.ScaleType = Enum.ScaleType.Slice
+Scripts.SliceCenter = Rect.new(8, 8, 248, 248)
+Scripts.MouseButton1Down:connect(function()
+HomeFrame.Visible = false
+PartnersFrame.Visible = false
+ScriptsFrame.Visible = true
+GamesFrame.Visible = false
+CreditsFrame.Visible = false
+end)
+
+TextLabel_2.Parent = Scripts
+TextLabel_2.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.5, 0, 0.518750072, 0)
+TextLabel_2.Size = UDim2.new(1.0427351, -5, 1.0625, -5)
+TextLabel_2.Font = Enum.Font.GothamBold
+TextLabel_2.Text = "Scripts"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+
+Games.Name = "Games"
+Games.Parent = QuickBackground
+Games.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Games.BackgroundTransparency = 1.000
+Games.Position = UDim2.new(0.127000004, 0, 0.319999993, 0)
+Games.Size = UDim2.new(0, 117, 0, 40)
+Games.Image = "rbxassetid://2790389767"
+Games.ImageColor3 = Color3.fromRGB(220, 80, 82)
+Games.ScaleType = Enum.ScaleType.Slice
+Games.SliceCenter = Rect.new(8, 8, 248, 248)
+Games.MouseButton1Down:connect(function()
+HomeFrame.Visible = false
+PartnersFrame.Visible = false
+ScriptsFrame.Visible = false
+GamesFrame.Visible = true
+CreditsFrame.Visible = false
+end)
+
+TextLabel_3.Parent = Games
+TextLabel_3.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0.5, 0, 0.518750072, 0)
+TextLabel_3.Size = UDim2.new(1.0427351, -5, 1.0625, -5)
+TextLabel_3.Font = Enum.Font.GothamBold
+TextLabel_3.Text = "Games"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+
+Credits.Name = "Credits"
+Credits.Parent = QuickBackground
+Credits.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credits.BackgroundTransparency = 1.000
+Credits.Position = UDim2.new(0.127000004, 0, 0.460999995, 0)
+Credits.Size = UDim2.new(0, 117, 0, 40)
+Credits.Image = "rbxassetid://2790389767"
+Credits.ImageColor3 = Color3.fromRGB(220, 80, 82)
+Credits.ScaleType = Enum.ScaleType.Slice
+Credits.SliceCenter = Rect.new(8, 8, 248, 248)
+Credits.MouseButton1Down:connect(function()
+HomeFrame.Visible = false
+PartnersFrame.Visible = false
+ScriptsFrame.Visible = false
+GamesFrame.Visible = false
+CreditsFrame.Visible = true
+end)
+
+TextLabel_4.Parent = Credits
+TextLabel_4.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0.5, 0, 0.518750072, 0)
+TextLabel_4.Size = UDim2.new(1.0427351, -5, 1.0625, -5)
+TextLabel_4.Font = Enum.Font.GothamBold
+TextLabel_4.Text = "Credits"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 14.000
+
+Partners.Name = "Partners"
+Partners.Parent = QuickBackground
+Partners.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Partners.BackgroundTransparency = 1.000
+Partners.Position = UDim2.new(0.127000004, 0, 0.601999998, 0)
+Partners.Size = UDim2.new(0, 117, 0, 40)
+Partners.Image = "rbxassetid://2790389767"
+Partners.ImageColor3 = Color3.fromRGB(220, 80, 82)
+Partners.ScaleType = Enum.ScaleType.Slice
+Partners.SliceCenter = Rect.new(8, 8, 248, 248)
+Partners.MouseButton1Down:connect(function()
+HomeFrame.Visible = false
+PartnersFrame.Visible = true
+ScriptsFrame.Visible = false
+GamesFrame.Visible = false
+CreditsFrame.Visible = false
+end)
+
+TextLabel_5.Parent = Partners
+TextLabel_5.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0.5, 0, 0.518750072, 0)
+TextLabel_5.Size = UDim2.new(1.0427351, -5, 1.0625, -5)
+TextLabel_5.Font = Enum.Font.GothamBold
+TextLabel_5.Text = "Partners"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 14.000
+
+ScrollingFrame.Parent = HomeFrame
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(38, 38, 47)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0135746608, 0, 0.184343427, 0)
+ScrollingFrame.Size = UDim2.new(0, 645, 0, 313)
+
+TextLabel_6.Parent = ScrollingFrame
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.0108527131, 0, 1.51828743e-07, 0)
+TextLabel_6.Size = UDim2.new(0, 616, 0, 200)
+TextLabel_6.Font = Enum.Font.GothamBold
+TextLabel_6.Text = "   Thank you for using FluffyHub! If you wish to support us, you can go on our server and donate and share the invite with the hub to many people! Big thanks to the people that help make this hub come true, be sure to check them out in the Credits tab! Our partner, which is also happens to be in our dev team, has made a amazing hub too! So be sure to check his Hub out too in the Partner tab. Once again, thank you for using FluffyHub!"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextScaled = true
+TextLabel_6.TextSize = 11.000
+TextLabel_6.TextWrapped = true
+TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+
+TextLabel_7.Parent = HomeFrame
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0.0135746608, 0, -0.00206918432, 0)
+TextLabel_7.Size = UDim2.new(0, 644, 0, 73)
+TextLabel_7.Font = Enum.Font.GothamBold
+TextLabel_7.Text = "FluffyHub"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 25.000
+
+CreditsFrame.Name = "CreditsFrame"
+CreditsFrame.Parent = Background
+CreditsFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+CreditsFrame.BackgroundTransparency = 1.000
+CreditsFrame.Position = UDim2.new(0.208000004, 0, 0.0839999989, 0)
+CreditsFrame.Size = UDim2.new(0, 663, 0, 396)
+CreditsFrame.Image = "rbxassetid://2790389767"
+CreditsFrame.ImageColor3 = Color3.fromRGB(55, 60, 70)
+CreditsFrame.ScaleType = Enum.ScaleType.Slice
+CreditsFrame.SliceCenter = Rect.new(8, 8, 248, 248)
+
+TextLabel_8.Parent = CreditsFrame
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.0136534628, 0, 0.0227272734, 0)
+TextLabel_8.Size = UDim2.new(0, 643, 0, 377)
+TextLabel_8.Font = Enum.Font.GothamBold
+TextLabel_8.Text = "UI Designer: HyperSkeleton#0513\\nScripts Maintainer: Fluff#9413\\nScript Source/Scripter: 0x64#6101\\nTester: Koreans#9057\\nAlso thanks to our former dev team, which has shape the hub to what it is today! (they are on our discord server)\\n\\nOur Discord: https://discord.gg/qEwGdym\\n\\nNote: None of are scripts belong to us, except AtariWow, belongs to Koreans, since there are too many scripts without there creator on, we decided to left it like that, we are sorry if we can't list your name."
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 20.000
+TextLabel_8.TextWrapped = true
+TextLabel_8.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_8.TextYAlignment = Enum.TextYAlignment.Top
+
+TextLabel_9.Parent = Background
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0.0135746598, 0, -0.00206913333, 0)
+TextLabel_9.Size = UDim2.new(0, 151, 0, 36)
+TextLabel_9.Font = Enum.Font.GothamBold
+TextLabel_9.Text = "FluffyHub"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 25.000
+
+GamesFrame.Name = "GamesFrame"
+GamesFrame.Parent = Background
+GamesFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+GamesFrame.BackgroundTransparency = 1.000
+GamesFrame.Position = UDim2.new(0.208000004, 0, 0.0839999989, 0)
+GamesFrame.Size = UDim2.new(0, 663, 0, 396)
+GamesFrame.Image = "rbxassetid://2790389767"
+GamesFrame.ImageColor3 = Color3.fromRGB(55, 60, 70)
+GamesFrame.ScaleType = Enum.ScaleType.Slice
+GamesFrame.SliceCenter = Rect.new(8, 8, 248, 248)
+
+ScrollingFrame_2.Parent = GamesFrame
+ScrollingFrame_2.BackgroundColor3 = Color3.fromRGB(38, 38, 47)
+ScrollingFrame_2.BorderSizePixel = 0
+ScrollingFrame_2.Position = UDim2.new(0.0135746608, 0, 0.0227272734, 0)
+ScrollingFrame_2.Size = UDim2.new(0, 645, 0, 377)
+
+AdoptMe.Name = "AdoptMe"
+AdoptMe.Parent = ScrollingFrame_2
+AdoptMe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdoptMe.BorderSizePixel = 0
+AdoptMe.Position = UDim2.new(0.592414379, 0, 0.327649832, 0)
+AdoptMe.Size = UDim2.new(0, 100, 0, 100)
+AdoptMe.Image = "http://www.roblox.com/asset/?id=4685311915"
+AdoptMe.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ZFeH0DpA",true))()
+end)
+
+TextLabel_10.Parent = AdoptMe
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_10.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_10.Font = Enum.Font.GothamBold
+TextLabel_10.Text = "Adopt Me"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextWrapped = true
+
+AnimeFightingSim.Name = "AnimeFightingSim"
+AnimeFightingSim.Parent = ScrollingFrame_2
+AnimeFightingSim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AnimeFightingSim.BorderSizePixel = 0
+AnimeFightingSim.Position = UDim2.new(0.0310077518, 0, 0.0202020202, 0)
+AnimeFightingSim.Size = UDim2.new(0, 100, 0, 100)
+AnimeFightingSim.Image = "http://www.roblox.com/asset/?id=4685277887"
+AnimeFightingSim.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/fRyhw2AL",true))()
+end)
+
+TextLabel_11.Parent = AnimeFightingSim
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_11.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_11.Font = Enum.Font.GothamBold
+TextLabel_11.Text = "Anime Fighting Sim"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextWrapped = true
+
+Arsenal.Name = "Arsenal"
+Arsenal.Parent = ScrollingFrame_2
+Arsenal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Arsenal.BorderSizePixel = 0
+Arsenal.Position = UDim2.new(0.217993081, 0, 0.0212201588, 0)
+Arsenal.Size = UDim2.new(0, 100, 0, 100)
+Arsenal.Image = "http://www.roblox.com/asset/?id=4685275470"
+Arsenal.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/4GmMS2ms",true))()
+end)
+
+TextLabel_12.Parent = Arsenal
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_12.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_12.Font = Enum.Font.GothamBold
+TextLabel_12.Text = "Arsenal"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextWrapped = true
+
+BIGPaintball.Name = "BIGPaintball"
+BIGPaintball.Parent = ScrollingFrame_2
+BIGPaintball.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BIGPaintball.BorderSizePixel = 0
+BIGPaintball.Position = UDim2.new(0.776816607, 0, 0.0212201588, 0)
+BIGPaintball.Size = UDim2.new(0, 100, 0, 100)
+BIGPaintball.Image = "http://www.roblox.com/asset/?id=4685287499"
+BIGPaintball.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/xgfsgi0y",true))()
+end)
+
+TextLabel_13.Parent = BIGPaintball
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_13.BorderSizePixel = 0
+TextLabel_13.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_13.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_13.Font = Enum.Font.GothamBold
+TextLabel_13.Text = "BIG Paintball"
+TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.TextWrapped = true
+
+DeathStarTycoon.Name = "DeathStarTycoon"
+DeathStarTycoon.Parent = ScrollingFrame_2
+DeathStarTycoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DeathStarTycoon.BorderSizePixel = 0
+DeathStarTycoon.Position = UDim2.new(0.405563176, 0, 0.481496006, 0)
+DeathStarTycoon.Size = UDim2.new(0, 100, 0, 100)
+DeathStarTycoon.Image = "http://www.roblox.com/asset/?id=4685312600"
+DeathStarTycoon.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ATmDyM84",true))()
+end)
+
+TextLabel_14.Parent = DeathStarTycoon
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_14.BorderSizePixel = 0
+TextLabel_14.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_14.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_14.Font = Enum.Font.GothamBold
+TextLabel_14.Text = "Death Star Tycoon"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextWrapped = true
+
+Jailbreak.Name = "Jailbreak"
+Jailbreak.Parent = ScrollingFrame_2
+Jailbreak.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Jailbreak.BorderSizePixel = 0
+Jailbreak.Position = UDim2.new(0.217993081, 0, 0.175066322, 0)
+Jailbreak.Size = UDim2.new(0, 100, 0, 100)
+Jailbreak.Image = "http://www.roblox.com/asset/?id=4685290508"
+Jailbreak.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/JSAyTt9H",true))()
+end)
+Jailbreak.MouseButton2Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/jF729wZd",true))()
+end)
+
+TextLabel_15.Parent = Jailbreak
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_15.BorderSizePixel = 0
+TextLabel_15.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_15.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_15.Font = Enum.Font.GothamBold
+TextLabel_15.Text = "Jailbreak"
+TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_15.TextWrapped = true
+
+LawnMowingSim.Name = "LawnMowingSim"
+LawnMowingSim.Parent = ScrollingFrame_2
+LawnMowingSim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LawnMowingSim.BorderSizePixel = 0
+LawnMowingSim.Position = UDim2.new(0.404844284, 0, 0.0212201588, 0)
+LawnMowingSim.Size = UDim2.new(0, 100, 0, 100)
+LawnMowingSim.Image = "http://www.roblox.com/asset/?id=4685279880"
+LawnMowingSim.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/0eWiQ2wN",true))()
+end)
+
+TextLabel_16.Parent = LawnMowingSim
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_16.BorderSizePixel = 0
+TextLabel_16.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_16.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_16.Font = Enum.Font.GothamBold
+TextLabel_16.Text = "Lawn Mowing Sim"
+TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_16.TextWrapped = true
+
+Madcity.Name = "Madcity"
+Madcity.Parent = ScrollingFrame_2
+Madcity.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Madcity.BorderSizePixel = 0
+Madcity.Position = UDim2.new(0.0311418679, 0, 0.175066322, 0)
+Madcity.Size = UDim2.new(0, 100, 0, 100)
+Madcity.Image = "http://www.roblox.com/asset/?id=4685281150"
+Madcity.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/9mSRJEYk",true))()
+end)
+
+TextLabel_17.Parent = Madcity
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_17.BorderSizePixel = 0
+TextLabel_17.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_17.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_17.Font = Enum.Font.GothamBold
+TextLabel_17.Text = "Mad City"
+TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_17.TextWrapped = true
+
+NaturalDisasterSim.Name = "NaturalDisasterSim"
+NaturalDisasterSim.Parent = ScrollingFrame_2
+NaturalDisasterSim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NaturalDisasterSim.BorderSizePixel = 0
+NaturalDisasterSim.Position = UDim2.new(0.0318607315, 0, 0.327649832, 0)
+NaturalDisasterSim.Size = UDim2.new(0, 100, 0, 100)
+NaturalDisasterSim.Image = "http://www.roblox.com/asset/?id=4685282932"
+NaturalDisasterSim.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/gw1TNjub",true))()
+end)
+
+TextLabel_18.Parent = NaturalDisasterSim
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_18.BorderSizePixel = 0
+TextLabel_18.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_18.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_18.Font = Enum.Font.GothamBold
+TextLabel_18.Text = "Natural Disaster Survival"
+TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_18.TextWrapped = true
+
+NinjaLegends.Name = "NinjaLegends"
+NinjaLegends.Parent = ScrollingFrame_2
+NinjaLegends.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NinjaLegends.BorderSizePixel = 0
+NinjaLegends.Position = UDim2.new(0.591695547, 0, 0.0212201588, 0)
+NinjaLegends.Size = UDim2.new(0, 100, 0, 100)
+NinjaLegends.Image = "http://www.roblox.com/asset/?id=4685289484"
+NinjaLegends.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/0WTpemXC",true))()
+end)
+
+TextLabel_19.Parent = NinjaLegends
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_19.BorderSizePixel = 0
+TextLabel_19.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_19.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_19.Font = Enum.Font.GothamBold
+TextLabel_19.Text = "Ninja Legends"
+TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_19.TextWrapped = true
+
+Piggy.Name = "Piggy"
+Piggy.Parent = ScrollingFrame_2
+Piggy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Piggy.BorderSizePixel = 0
+Piggy.Position = UDim2.new(0.777535439, 0, 0.327649832, 0)
+Piggy.Size = UDim2.new(0, 100, 0, 100)
+Piggy.Image = "http://www.roblox.com/asset/?id=4685313314"
+Piggy.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/kaE8YFP0",true))()
+end)
+
+TextLabel_20.Parent = Piggy
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_20.BorderSizePixel = 0
+TextLabel_20.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_20.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_20.Font = Enum.Font.GothamBold
+TextLabel_20.Text = "Piggy"
+TextLabel_20.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_20.TextWrapped = true
+
+PrisonLife.Name = "PrisonLife"
+PrisonLife.Parent = ScrollingFrame_2
+PrisonLife.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PrisonLife.BorderSizePixel = 0
+PrisonLife.Position = UDim2.new(0.404844284, 0, 0.175066322, 0)
+PrisonLife.Size = UDim2.new(0, 100, 0, 100)
+PrisonLife.Image = "http://www.roblox.com/asset/?id=4685286265"
+PrisonLife.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/b9Jur4wu",true))()
+end)
+
+TextLabel_21.Parent = PrisonLife
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_21.BorderSizePixel = 0
+TextLabel_21.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_21.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_21.Font = Enum.Font.GothamBold
+TextLabel_21.Text = "Prison Life"
+TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.TextWrapped = true
+
+SaberSim.Name = "SaberSim"
+SaberSim.Parent = ScrollingFrame_2
+SaberSim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SaberSim.BorderSizePixel = 0
+SaberSim.Position = UDim2.new(0.218711942, 0, 0.327649832, 0)
+SaberSim.Size = UDim2.new(0, 100, 0, 100)
+SaberSim.Image = "http://www.roblox.com/asset/?id=4685309096"
+SaberSim.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/n57TVdE1",true))()
+end)
+
+TextLabel_22.Parent = SaberSim
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_22.BorderSizePixel = 0
+TextLabel_22.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_22.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_22.Font = Enum.Font.GothamBold
+TextLabel_22.Text = "Saber Sim"
+TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.TextWrapped = true
+
+Skywars.Name = "Skywars"
+Skywars.Parent = ScrollingFrame_2
+Skywars.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Skywars.BorderSizePixel = 0
+Skywars.Position = UDim2.new(0.0318607315, 0, 0.481496006, 0)
+Skywars.Size = UDim2.new(0, 100, 0, 100)
+Skywars.Image = "http://www.roblox.com/asset/?id=4685313740"
+Skywars.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/6gvrxxjp",true))()
+end)
+
+TextLabel_23.Parent = Skywars
+TextLabel_23.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_23.BorderSizePixel = 0
+TextLabel_23.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_23.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_23.Font = Enum.Font.GothamBold
+TextLabel_23.Text = "Skywars"
+TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_23.TextWrapped = true
+
+SpeedRun4.Name = "SpeedRun4"
+SpeedRun4.Parent = ScrollingFrame_2
+SpeedRun4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedRun4.BorderSizePixel = 0
+SpeedRun4.Position = UDim2.new(0.776816607, 0, 0.175066322, 0)
+SpeedRun4.Size = UDim2.new(0, 100, 0, 100)
+SpeedRun4.Image = "http://www.roblox.com/asset/?id=4685284127"
+SpeedRun4.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/DSdQWh1n",true))()
+end)
+
+TextLabel_24.Parent = SpeedRun4
+TextLabel_24.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_24.BorderSizePixel = 0
+TextLabel_24.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_24.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_24.Font = Enum.Font.GothamBold
+TextLabel_24.Text = "Speed Run 4"
+TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_24.TextWrapped = true
+
+ThickLegends.Name = "ThickLegends"
+ThickLegends.Parent = ScrollingFrame_2
+ThickLegends.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ThickLegends.BorderSizePixel = 0
+ThickLegends.Position = UDim2.new(0.218711942, 0, 0.481496006, 0)
+ThickLegends.Size = UDim2.new(0, 100, 0, 100)
+ThickLegends.Image = "http://www.roblox.com/asset/?id=4685310996"
+ThickLegends.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/x7ep5Fh0",true))()
+end)
+
+TextLabel_25.Parent = ThickLegends
+TextLabel_25.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_25.BorderSizePixel = 0
+TextLabel_25.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_25.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_25.Font = Enum.Font.GothamBold
+TextLabel_25.Text = "Thick Legends"
+TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_25.TextWrapped = true
+
+TowerOfHell.Name = "Tower Of Hell"
+TowerOfHell.Parent = ScrollingFrame_2
+TowerOfHell.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TowerOfHell.BorderSizePixel = 0
+TowerOfHell.Position = UDim2.new(0.405563176, 0, 0.327649832, 0)
+TowerOfHell.Size = UDim2.new(0, 100, 0, 100)
+TowerOfHell.Image = "http://www.roblox.com/asset/?id=4685310256"
+TowerOfHell.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/RwCxWhWy",true))()
+end)
+
+TextLabel_26.Parent = TowerOfHell
+TextLabel_26.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_26.BorderSizePixel = 0
+TextLabel_26.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_26.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_26.Font = Enum.Font.GothamBold
+TextLabel_26.Text = "Tower Of Hell"
+TextLabel_26.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_26.TextWrapped = true
+
+GiantSimulator.Name = "Giant Simulator"
+GiantSimulator.Parent = ScrollingFrame_2
+GiantSimulator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GiantSimulator.BorderSizePixel = 0
+GiantSimulator.Position = UDim2.new(0.592414379, 0, 0.480427593, 0)
+GiantSimulator.Size = UDim2.new(0, 100, 0, 100)
+GiantSimulator.Image = "http://www.roblox.com/asset/?id=4696255154"
+GiantSimulator.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/ycRjRs5J",true))()
+end)
+
+TextLabel_27.Parent = GiantSimulator
+TextLabel_27.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_27.BorderSizePixel = 0
+TextLabel_27.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_27.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_27.Font = Enum.Font.GothamBold
+TextLabel_27.Text = "Giant Simulator"
+TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_27.TextWrapped = true
+
+TheStreets.Name = "The Streets"
+TheStreets.Parent = ScrollingFrame_2
+TheStreets.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TheStreets.BorderSizePixel = 0
+TheStreets.Position = UDim2.new(0.777535439, 0, 0.480427593, 0)
+TheStreets.Size = UDim2.new(0, 100, 0, 100)
+TheStreets.Image = "http://www.roblox.com/asset/?id=4696258232"
+TheStreets.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/0AhKJSmW",true))()
+end)
+
+TextLabel_28.Parent = TheStreets
+TextLabel_28.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_28.BorderSizePixel = 0
+TextLabel_28.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_28.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_28.Font = Enum.Font.GothamBold
+TextLabel_28.Text = "The Streets"
+TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_28.TextWrapped = true
+
+DungeonQuest.Name = "DungeonQuest"
+DungeonQuest.Parent = ScrollingFrame_2
+DungeonQuest.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DungeonQuest.BorderSizePixel = 0
+DungeonQuest.Position = UDim2.new(0.590697646, 0, 0.175505057, 0)
+DungeonQuest.Size = UDim2.new(0, 100, 0, 100)
+DungeonQuest.Image = "http://www.roblox.com/asset/?id=4685285135"
+DungeonQuest.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/AGhSS5y8",true))()
+end)
+
+TextLabel_29.Parent = DungeonQuest
+TextLabel_29.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_29.BorderSizePixel = 0
+TextLabel_29.Position = UDim2.new(-3.05175774e-07, 0, 0.846936345, 0)
+TextLabel_29.Size = UDim2.new(0, 100, 0, 16)
+TextLabel_29.Font = Enum.Font.GothamBold
+TextLabel_29.Text = "Dungeon Quest"
+TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_29.TextWrapped = true
+
+ScriptsFrame.Name = "ScriptsFrame"
+ScriptsFrame.Parent = Background
+ScriptsFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ScriptsFrame.BackgroundTransparency = 1.000
+ScriptsFrame.Position = UDim2.new(0.20806165, 0, 0.0812641084, 0)
+ScriptsFrame.Size = UDim2.new(0, 663, 0, 396)
+ScriptsFrame.Image = "rbxassetid://2790389767"
+ScriptsFrame.ImageColor3 = Color3.fromRGB(55, 60, 70)
+ScriptsFrame.ScaleType = Enum.ScaleType.Slice
+ScriptsFrame.SliceCenter = Rect.new(8, 8, 248, 248)
+
+ScrollingFrame_3.Parent = ScriptsFrame
+ScrollingFrame_3.BackgroundColor3 = Color3.fromRGB(38, 38, 47)
+ScrollingFrame_3.BorderSizePixel = 0
+ScrollingFrame_3.Position = UDim2.new(0.0135746608, 0, 0.0227272734, 0)
+ScrollingFrame_3.Size = UDim2.new(0, 645, 0, 377)
+
+ChatSpy.Name = "Chat Spy"
+ChatSpy.Parent = ScrollingFrame_3
+ChatSpy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChatSpy.BackgroundTransparency = 1.000
+ChatSpy.Position = UDim2.new(0.0311418772, 0, 0.237471879, 0)
+ChatSpy.Size = UDim2.new(0, 170, 0, 40)
+ChatSpy.Image = "rbxassetid://2790382281"
+ChatSpy.ImageColor3 = Color3.fromRGB(55, 60, 70)
+ChatSpy.ScaleType = Enum.ScaleType.Slice
+ChatSpy.SliceCenter = Rect.new(4, 4, 252, 252)
+ChatSpy.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/NgcG54aY",true))()
+end)
+
+TextLabel_30.Parent = ChatSpy
+TextLabel_30.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_30.BackgroundTransparency = 1.000
+TextLabel_30.BorderSizePixel = 0
+TextLabel_30.Position = UDim2.new(0.5, 0, 0.515418291, 0)
+TextLabel_30.Size = UDim2.new(1.02941179, -5, 1.14416432, -5)
+TextLabel_30.Font = Enum.Font.GothamBold
+TextLabel_30.Text = "Chat Spy"
+TextLabel_30.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_30.TextSize = 14.000
+
+DarkDex.Name = "Dark Dex"
+DarkDex.Parent = ScrollingFrame_3
+DarkDex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DarkDex.BackgroundTransparency = 1.000
+DarkDex.Position = UDim2.new(0.0311418772, 0, 0.0911952928, 0)
+DarkDex.Size = UDim2.new(0, 170, 0, 40)
+DarkDex.Image = "rbxassetid://2790382281"
+DarkDex.ImageColor3 = Color3.fromRGB(55, 60, 70)
+DarkDex.ScaleType = Enum.ScaleType.Slice
+DarkDex.SliceCenter = Rect.new(4, 4, 252, 252)
+DarkDex.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/7m5dcczN",true))()
+end)
+
+TextLabel_31.Parent = DarkDex
+TextLabel_31.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_31.BackgroundTransparency = 1.000
+TextLabel_31.BorderSizePixel = 0
+TextLabel_31.Position = UDim2.new(0.5, 0, 0.490418434, 0)
+TextLabel_31.Size = UDim2.new(1.02941179, -5, 1.14416432, -5)
+TextLabel_31.Font = Enum.Font.GothamBold
+TextLabel_31.Text = "Dark Dex"
+TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_31.TextSize = 14.000
+
+FPSGUI.Name = "FPS GUI"
+FPSGUI.Parent = ScrollingFrame_3
+FPSGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FPSGUI.BackgroundTransparency = 1.000
+FPSGUI.Position = UDim2.new(0.674740493, 0, 0.164333582, 0)
+FPSGUI.Size = UDim2.new(0, 170, 0, 40)
+FPSGUI.Image = "rbxassetid://2790382281"
+FPSGUI.ImageColor3 = Color3.fromRGB(55, 60, 70)
+FPSGUI.ScaleType = Enum.ScaleType.Slice
+FPSGUI.SliceCenter = Rect.new(4, 4, 252, 252)
+FPSGUI.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/G8ECCQhu",true))()
+end)
+
+TextLabel_32.Parent = FPSGUI
+TextLabel_32.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_32.BackgroundTransparency = 1.000
+TextLabel_32.BorderSizePixel = 0
+TextLabel_32.Position = UDim2.new(0.5, 0, 0.490418434, 0)
+TextLabel_32.Size = UDim2.new(1.02941179, -5, 1.14416432, -5)
+TextLabel_32.Font = Enum.Font.GothamBold
+TextLabel_32.Text = "FPS GUI"
+TextLabel_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_32.TextSize = 14.000
+
+FrostHook.Name = "FrostHook"
+FrostHook.Parent = ScrollingFrame_3
+FrostHook.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FrostHook.BackgroundTransparency = 1.000
+FrostHook.Position = UDim2.new(0.0311418772, 0, 0.164333582, 0)
+FrostHook.Size = UDim2.new(0, 170, 0, 40)
+FrostHook.Image = "rbxassetid://2790382281"
+FrostHook.ImageColor3 = Color3.fromRGB(55, 60, 70)
+FrostHook.ScaleType = Enum.ScaleType.Slice
+FrostHook.SliceCenter = Rect.new(4, 4, 252, 252)
+FrostHook.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Nootchtai/FrostHook_Spy/master/Spy.lua"))()
+end)
+
+TextLabel_33.Parent = FrostHook
+TextLabel_33.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_33.BackgroundTransparency = 1.000
+TextLabel_33.BorderSizePixel = 0
+TextLabel_33.Position = UDim2.new(0.5, 0, 0.490418434, 0)
+TextLabel_33.Size = UDim2.new(1.02941179, -5, 1.14416432, -5)
+TextLabel_33.Font = Enum.Font.GothamBold
+TextLabel_33.Text = "FrostHook"
+TextLabel_33.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_33.TextSize = 14.000
+
+InfJump.Name = "Inf Jump"
+InfJump.Parent = ScrollingFrame_3
+InfJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfJump.BackgroundTransparency = 1.000
+InfJump.Position = UDim2.new(0.674740493, 0, 0.0911952928, 0)
+InfJump.Size = UDim2.new(0, 170, 0, 40)
+InfJump.Image = "rbxassetid://2790382281"
+InfJump.ImageColor3 = Color3.fromRGB(55, 60, 70)
+InfJump.ScaleType = Enum.ScaleType.Slice
+InfJump.SliceCenter = Rect.new(4, 4, 252, 252)
+InfJump.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/EFMBp9N8",true))()
+end)
+
+TextLabel_34.Parent = InfJump
+TextLabel_34.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_34.BackgroundTransparency = 1.000
+TextLabel_34.BorderSizePixel = 0
+TextLabel_34.Position = UDim2.new(0.5, 0, 0.490418434, 0)
+TextLabel_34.Size = UDim2.new(1.02941179, -5, 1.14416432, -5)
+TextLabel_34.Font = Enum.Font.GothamBold
+TextLabel_34.Text = "Inf Jump"
+TextLabel_34.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_34.TextSize = 14.000
+
+MrSpyV2.Name = "Mr Spy V2"
+MrSpyV2.Parent = ScrollingFrame_3
+MrSpyV2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MrSpyV2.BackgroundTransparency = 1.000
+MrSpyV2.Position = UDim2.new(0.674740493, 0, 0.0167272091, 0)
+MrSpyV2.Size = UDim2.new(0, 170, 0, 40)
+MrSpyV2.Image = "rbxassetid://2790382281"
+MrSpyV2.ImageColor3 = Color3.fromRGB(55, 60, 70)
+MrSpyV2.ScaleType = Enum.ScaleType.Slice
+MrSpyV2.SliceCenter = Rect.new(4, 4, 252, 252)
+MrSpyV2.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/hYPZCW3i", true))()
+end)
+
+TextLabel_35.Parent = MrSpyV2
+TextLabel_35.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_35.BackgroundTransparency = 1.000
+TextLabel_35.BorderSizePixel = 0
+TextLabel_35.Position = UDim2.new(0.5, 0, 0.490418434, 0)
+TextLabel_35.Size = UDim2.new(1.02941179, -5, 1.14416432, -5)
+TextLabel_35.Font = Enum.Font.GothamBold
+TextLabel_35.Text = "Mr Spy V2"
+TextLabel_35.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_35.TextSize = 14.000
+
+OwlHub.Name = "OwlHub"
+OwlHub.Parent = ScrollingFrame_3
+OwlHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OwlHub.BackgroundTransparency = 1.000
+OwlHub.Position = UDim2.new(0.0311418772, 0, 0.0167272091, 0)
+OwlHub.Size = UDim2.new(0, 170, 0, 40)
+OwlHub.Image = "rbxassetid://2790382281"
+OwlHub.ImageColor3 = Color3.fromRGB(55, 60, 70)
+OwlHub.ScaleType = Enum.ScaleType.Slice
+OwlHub.SliceCenter = Rect.new(4, 4, 252, 252)
+OwlHub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+TextLabel_36.Parent = OwlHub
+TextLabel_36.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_36.BackgroundTransparency = 1.000
+TextLabel_36.BorderSizePixel = 0
+TextLabel_36.Position = UDim2.new(0.5, 0, 0.490418434, 0)
+TextLabel_36.Size = UDim2.new(1.02941179, -5, 1.14416432, -5)
+TextLabel_36.Font = Enum.Font.GothamBold
+TextLabel_36.Text = "Owl Hub"
+TextLabel_36.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_36.TextSize = 14.000
+
+PotatoHub.Name = "PotatoHub"
+PotatoHub.Parent = ScrollingFrame_3
+PotatoHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PotatoHub.BackgroundTransparency = 1.000
+PotatoHub.Position = UDim2.new(0.352941185, 0, 0.0167272091, 0)
+PotatoHub.Size = UDim2.new(0, 170, 0, 40)
+PotatoHub.Image = "rbxassetid://2790382281"
+PotatoHub.ImageColor3 = Color3.fromRGB(55, 60, 70)
+PotatoHub.ScaleType = Enum.ScaleType.Slice
+PotatoHub.SliceCenter = Rect.new(4, 4, 252, 252)
+PotatoHub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://www.potato-hub.com/PotatoHub.lua'),true))()
+end)
+
+TextLabel_37.Parent = PotatoHub
+TextLabel_37.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_37.BackgroundTransparency = 1.000
+TextLabel_37.BorderSizePixel = 0
+TextLabel_37.Position = UDim2.new(0.5, 0, 0.490418434, 0)
+TextLabel_37.Size = UDim2.new(1.02941179, -5, 1.14416432, -5)
+TextLabel_37.Font = Enum.Font.GothamBold
+TextLabel_37.Text = "Potato Hub"
+TextLabel_37.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_37.TextSize = 14.000
+
+UniversalAimbot.Name = "Universal Aimbot"
+UniversalAimbot.Parent = ScrollingFrame_3
+UniversalAimbot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UniversalAimbot.BackgroundTransparency = 1.000
+UniversalAimbot.Position = UDim2.new(0.352941185, 0, 0.164333582, 0)
+UniversalAimbot.Size = UDim2.new(0, 170, 0, 40)
+UniversalAimbot.Image = "rbxassetid://2790382281"
+UniversalAimbot.ImageColor3 = Color3.fromRGB(55, 60, 70)
+UniversalAimbot.ScaleType = Enum.ScaleType.Slice
+UniversalAimbot.SliceCenter = Rect.new(4, 4, 252, 252)
+UniversalAimbot.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/T5W8NSsQ",true))()
+end)
+
+TextLabel_38.Parent = UniversalAimbot
+TextLabel_38.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.BackgroundTransparency = 1.000
+TextLabel_38.BorderSizePixel = 0
+TextLabel_38.Position = UDim2.new(0.5, 0, 0.490418434, 0)
+TextLabel_38.Size = UDim2.new(1.02941179, -5, 1.14416432, -5)
+TextLabel_38.Font = Enum.Font.GothamBold
+TextLabel_38.Text = "Universal Aimbot"
+TextLabel_38.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_38.TextSize = 14.000
+
+UnnamedESP.Name = "Unnamed ESP"
+UnnamedESP.Parent = ScrollingFrame_3
+UnnamedESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnnamedESP.BackgroundTransparency = 1.000
+UnnamedESP.Position = UDim2.new(0.352941185, 0, 0.0911952928, 0)
+UnnamedESP.Size = UDim2.new(0, 170, 0, 40)
+UnnamedESP.Image = "rbxassetid://2790382281"
+UnnamedESP.ImageColor3 = Color3.fromRGB(55, 60, 70)
+UnnamedESP.ScaleType = Enum.ScaleType.Slice
+UnnamedESP.SliceCenter = Rect.new(4, 4, 252, 252)
+UnnamedESP.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/z4y56GVg",true))()
+end)
+
+TextLabel_39.Parent = UnnamedESP
+TextLabel_39.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_39.BackgroundTransparency = 1.000
+TextLabel_39.BorderSizePixel = 0
+TextLabel_39.Position = UDim2.new(0.5, 0, 0.490418434, 0)
+TextLabel_39.Size = UDim2.new(1.02941179, -5, 1.14416432, -5)
+TextLabel_39.Font = Enum.Font.GothamBold
+TextLabel_39.Text = "Unnamed ESP"
+TextLabel_39.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_39.TextSize = 14.000
+
+TrollingGUI.Name = "Trolling GUI"
+TrollingGUI.Parent = ScrollingFrame_3
+TrollingGUI.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TrollingGUI.BackgroundTransparency = 1.000
+TrollingGUI.Position = UDim2.new(0.674740493, 0, 0.23630327, 0)
+TrollingGUI.Size = UDim2.new(0, 170, 0, 40)
+TrollingGUI.Image = "rbxassetid://2790382281"
+TrollingGUI.ImageColor3 = Color3.fromRGB(55, 60, 70)
+TrollingGUI.ScaleType = Enum.ScaleType.Slice
+TrollingGUI.SliceCenter = Rect.new(4, 4, 252, 252)
+TrollingGUI.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Npiv6wSa",true))()
+end)
+
+TextLabel_40.Parent = TrollingGUI
+TextLabel_40.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_40.BackgroundTransparency = 1.000
+TextLabel_40.BorderSizePixel = 0
+TextLabel_40.Position = UDim2.new(0.5, 0, 0.51541853, 0)
+TextLabel_40.Size = UDim2.new(1.02941179, -5, 1.14416432, -5)
+TextLabel_40.Font = Enum.Font.GothamBold
+TextLabel_40.Text = "Trolling GUI"
+TextLabel_40.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_40.TextSize = 14.000
+
+AtariWow.Name = "AtariWow"
+AtariWow.Parent = ScrollingFrame_3
+AtariWow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AtariWow.BackgroundTransparency = 1.000
+AtariWow.Position = UDim2.new(0.355172873, 0, 0.237471879, 0)
+AtariWow.Size = UDim2.new(0, 170, 0, 40)
+AtariWow.Image = "rbxassetid://2790382281"
+AtariWow.ImageColor3 = Color3.fromRGB(55, 60, 70)
+AtariWow.ScaleType = Enum.ScaleType.Slice
+AtariWow.SliceCenter = Rect.new(4, 4, 252, 252)
+AtariWow.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/XLbnPTw2",true))()
+end)
+
+TextLabel_41.Parent = AtariWow
+TextLabel_41.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_41.BackgroundTransparency = 1.000
+TextLabel_41.BorderSizePixel = 0
+TextLabel_41.Position = UDim2.new(0.494117647, 0, 0.515418231, 0)
+TextLabel_41.Size = UDim2.new(1.01764703, -5, 1.14416432, -5)
+TextLabel_41.Font = Enum.Font.GothamBold
+TextLabel_41.Text = "AtariWow"
+TextLabel_41.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_41.TextSize = 14.000
+
+PartnersFrame.Name = "PartnersFrame"
+PartnersFrame.Parent = Background
+PartnersFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+PartnersFrame.BackgroundTransparency = 1.000
+PartnersFrame.Position = UDim2.new(0.20806165, 0, 0.0840000138, 0)
+PartnersFrame.Size = UDim2.new(0, 663, 0, 396)
+PartnersFrame.Image = "rbxassetid://2790389767"
+PartnersFrame.ImageColor3 = Color3.fromRGB(55, 60, 70)
+PartnersFrame.ScaleType = Enum.ScaleType.Slice
+PartnersFrame.SliceCenter = Rect.new(8, 8, 248, 248)
+
+HomeFrame.Name = "HomeFrame"
+HomeFrame.Parent = Background
+HomeFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+HomeFrame.BackgroundTransparency = 1.000
+HomeFrame.Position = UDim2.new(0.208061725, 0, 0.0835214481, 0)
+HomeFrame.Size = UDim2.new(0, 663, 0, 396)
+HomeFrame.Image = "rbxassetid://2790389767"
+HomeFrame.ImageColor3 = Color3.fromRGB(55, 60, 70)
+HomeFrame.ScaleType = Enum.ScaleType.Slice
+HomeFrame.SliceCenter = Rect.new(8, 8, 248, 248)
+
+ScrollingFrame_4.Parent = PartnersFrame
+ScrollingFrame_4.BackgroundColor3 = Color3.fromRGB(38, 38, 47)
+ScrollingFrame_4.BorderSizePixel = 0
+ScrollingFrame_4.Position = UDim2.new(0.0135746608, 0, 0.0227272734, 0)
+ScrollingFrame_4.Size = UDim2.new(0, 645, 0, 377)
+
+TextLabel_42.Parent = ScrollingFrame_4
+TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_42.BackgroundTransparency = 1.000
+TextLabel_42.Position = UDim2.new(0.0310077053, 0, 0.0196274985, 0)
+TextLabel_42.Size = UDim2.new(0, 603, 0, 138)
+TextLabel_42.Font = Enum.Font.GothamBold
+TextLabel_42.Text = "HyperSkeleton's Hub. Be sure to check him out! His hub haven't got that much games but it has a good looking design and inspired with iPhone. He will work for both of iHub and FluffyHub. If you want to support him to make it become better, join his server and donate, or maybe help him in development!\\nhttps://discord.gg/MkWS4v7"
+TextLabel_42.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_42.TextSize = 20.000
+TextLabel_42.TextWrapped = true
+TextLabel_42.TextXAlignment = Enum.TextXAlignment.Left
+TextLabel_42.TextYAlignment = Enum.TextYAlignment.Top
+
+iHub.Name = "iHub"
+iHub.Parent = ScrollingFrame_4
+iHub.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+iHub.BackgroundTransparency = 1.000
+iHub.Position = UDim2.new(0.350521713, 0, 0.213696897, 0)
+iHub.Size = UDim2.new(0, 170, 0, 40)
+iHub.Image = "rbxassetid://2790382281"
+iHub.ImageColor3 = Color3.fromRGB(55, 60, 70)
+iHub.ScaleType = Enum.ScaleType.Slice
+iHub.SliceCenter = Rect.new(4, 4, 252, 252)
+iHub.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/flufl/bignukes/master/iHub.txt",true))()
+end)
+
+TextLabel_43.Parent = iHub
+TextLabel_43.AnchorPoint = Vector2.new(0.5, 0.5)
+TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_43.BackgroundTransparency = 1.000
+TextLabel_43.BorderSizePixel = 0
+TextLabel_43.Position = UDim2.new(0.5, 0, 0.465418339, 0)
+TextLabel_43.Size = UDim2.new(1.02941179, -5, 1.14416432, -5)
+TextLabel_43.Font = Enum.Font.GothamBold
+TextLabel_43.Text = "iHub"
+TextLabel_43.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_43.TextSize = 14.000
+
+-- Scripts:
+
+local function IAOZU_fake_script() -- Background.LocalScript 
+	local script = Instance.new('LocalScript', Background)
+
+	script.Parent.Selectable = true
+	script.Parent.Active = true
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		script.Parent:TweenPosition(UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y),'Out','Quint',.15,true)
+	end
+	script.Parent.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragging = true
+			dragStart = input.Position
+			startPos = script.Parent.Position
+			
+			repeat wait() until input.UserInputState == Enum.UserInputState.End
+			dragging = false
+		end
+	end)
+	script.Parent.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	game:GetService("UserInputService").InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+	
+	p = game:GetService("Players").LocalPlayer
+	mouse = p:GetMouse()
+	openedGui = true
+	mouse.KeyDown:connect(function(key)
+	        if key == "=" then
+	    	if openedGui == true then
+			openedGui = false
+			script.Parent.Parent.Enabled = false
+		elseif openedGui == false then
+			openedGui = true
+			script.Parent.Parent.Enabled = true
+		end
+	end
+end)
+	
+end
+coroutine.wrap(IAOZU_fake_script)()
