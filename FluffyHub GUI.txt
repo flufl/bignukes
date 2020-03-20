@@ -1,3 +1,8 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+Title    = "FluffyHub",
+Text     = "Use = to hide the hub.",
+Duration = 10,
+})
 --[[
 IronBrew:tm: obfuscation; Version 2.7.2
 ]]
