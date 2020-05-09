@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("http://thiccthighs.ml/scripts/hubs/FluffyHub/Main.lua"))()
+loadstring(game:HttpGet("https://thiccthighs.ml/scripts/hubs/FluffyHub/Main.lua"))()
